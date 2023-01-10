@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="nig" class="blackback"></div>
+    <div class="container">
+        <header>
+            <div class="nav">
+
+                <div class="left-nav">
+                    <div onclick="showmenu()" class="togler"><img src="./images/icon-menu.svg" alt=""></div>
+                    <div class="logo-nav">
+                        <img src="./images/logo.svg" alt="sneakers" width="140">
+                    </div>
+                    <div id="cat" class="categories-nav">
+                        <div id="X"><img src="./images/icon-close.svg" alt=""></div>
+                        <div><a href="">Collections</a></div>
+                        <div><a href="">Men</a></div>
+                        <div><a href="">Women</a></div>
+                        <div><a href="">About</a></div>
+                        <div><a href="">Contact</a></div>
+                    </div>
+                </div>
+
+                <div class="right-nav">
+                    <div class="cart-nav">
+                        <img src="./images/icon-cart.svg" alt="" width="25">
+                    </div>
+                    <div class="avatar-nav">
+                        <img src="./images/image-avatar.png" alt="" width="53">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="product-ctn">
+            <div class="product-pics">
+                <div class="main-pic">
+                    <div id="bigpic"><img src="./images/image-product-1.jpg" alt=""></div>
+                    <div class="prev" onclick="nextprod(false)"><img src="./images/icon-previous.svg" alt=""></div>
+                    <div class="next" onclick="nextprod(true)"><img src="./images/icon-next.svg" alt=""></div>
+                </div>
+                <div class="sec-pics">
+                    <div id="image-product-1" class="now" onclick="change_big(this.id)"><img src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+                    <div id="image-product-2" onclick="change_big(this.id)"><img src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+                    <div id="image-product-3" onclick="change_big(this.id)"><img src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+                    <div id="image-product-4" onclick="change_big(this.id)"><img src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+                </div>
+            </div>
+
+            <div class="product-inf">
+                <p style="color: var(--Orange);text-transform: uppercase;font-weight: 700;margin-bottom: 30px;">Sneaker
+                    Company</p>
+                <p style="font-weight: 700; font-size: 40px; color: hsl(220, 13%, 13%);margin-bottom: 50px;">Fall
+                    Limited Edition Sneakers</p>
+                <p style="color: hsl(219, 9%, 45%);margin-bottom: 30px;">These low-profile sneakers are your perfect
+                    casual wear companion. Featuring a
+                    durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+                <div style="display: flex;align-items: center;margin:15px 0;">
+                    <span
+                        style="font-weight: 700; font-size: 30px; color: hsl(220, 13%, 13%);margin-right: 15px;">$125.00</span>
+                    <span
+                        style="color: var(--Orange);background-color: var(--PaleOrange);padding: 3px 7px;font-weight: 700;border-radius: 5px;">50%</span>
+                </div>
+                <p
+                    style="text-decoration: line-through; color: hsl(220, 14%, 75%);font-weight: 700;margin-bottom: 38px;">
+                    $250.00</p>
+                <div class="buy-item">
+                    <div class="buy-numb">
+                        <div onclick="addord(false)"><img src="./images/icon-minus.svg"  alt=""></div>
+                        <span id="nub-prod">0</span>
+                        <div onclick="addord(true)"><img src="./images/icon-plus.svg"  alt=""></div>
+                    </div>
+                    <div class="buy-but">
+                        <img style="margin-right:13px;" src="./images/icon-cart.svg" alt="">Add to cart
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
